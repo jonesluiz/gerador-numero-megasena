@@ -18,10 +18,12 @@ body{
 header{
     top: 0;
     display: flex;
+    margin: 0 5%;
     align-items: self-start;
     padding: 10px 20px;
     text-align: center;
-    font-size: xx-large;
+    font-size: 200%;
+    min-width: 350px;
     background-color: green;
     color: white;
     padding: 20px 20px;
@@ -70,11 +72,12 @@ main{
 .sorteio{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 5%;
     padding: 16px 16px;
     margin: 50px 0 16px 0;
-    width: 500px;
-    font-size: 24px;
+    min-width: 350px;
+    width: 35%;
+    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.453);
     border: 2px solid black;
     color: white;
@@ -91,5 +94,14 @@ footer{
     position: fixed;
     background-color: rgba(13, 13, 139, 0.984);
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1400px){
+    .main{
+        width: 90%;
+        padding: 10%;
+        margin: 60%;
+        justify-content: center;
+    }
 }
